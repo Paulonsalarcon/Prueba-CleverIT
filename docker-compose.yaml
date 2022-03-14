@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  newman:
+    image: postman/newman:alpine
+    volumes:
+      - ./scripts:/etc/newman
+    command: run /etc/newman/CleverITTest.postman_collection.json -e /etc/newman/TestCleverIt.postman_environment.json

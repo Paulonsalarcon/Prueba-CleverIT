@@ -1,0 +1,1041 @@
+{
+	"info": {
+		"_postman_id": "33000e6c-7350-4357-886b-15d5b3afacf7",
+		"name": "CleverITTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Temperature",
+			"item": [
+				{
+					"name": "Positive",
+					"item": [
+						{
+							"name": "Get Temperature - Santiago",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify If Temperature Exists\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.status(200);",
+											"    pm.expect(jsonData.temperaturaActual);",
+											"    pm.expect(jsonData.temperaturaDiaSiguiente);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "Santiago",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - Arica",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify If Temperature Exists\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.status(200);",
+											"    pm.expect(jsonData.temperaturaActual);",
+											"    pm.expect(jsonData.temperaturaDiaSiguiente);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "Arica",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - Chiloe",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify If Temperature Exists\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.status(200);",
+											"    pm.expect(jsonData.temperaturaActual);",
+											"    pm.expect(jsonData.temperaturaDiaSiguiente);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "Chiloe",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - BuenosAires",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify If Temperature Exists\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.status(200);",
+											"    pm.expect(jsonData.temperaturaActual);",
+											"    pm.expect(jsonData.temperaturaDiaSiguiente);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "BuenosAires",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - SanJuan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify If Temperature Exists\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.status(200);",
+											"    pm.expect(jsonData.temperaturaActual);",
+											"    pm.expect(jsonData.temperaturaDiaSiguiente);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "SanJuan",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Negative",
+					"item": [
+						{
+							"name": "Get Temperature - City With Space",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Body matches string\", function () {",
+											"    pm.expect(pm.response.text()).to.include(\"País y Ciudad incorrectos\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Argentina",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "Buenos Aires",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - Incorrect Country",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Body matches string\", function () {",
+											"    pm.expect(pm.response.text()).to.include(\"País y Ciudad incorrectos\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Argentina",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "Santiago",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - Incorrect Case Country",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Body matches string\", function () {",
+											"    pm.expect(pm.response.text()).to.include(\"País y Ciudad incorrectos\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "argentina",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "BuenosAires",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Temperature - Incorrect Case City",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Body matches string\", function () {",
+											"    pm.expect(pm.response.text()).to.include(\"País y Ciudad incorrectos\");",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "country",
+										"value": "Chile",
+										"type": "text"
+									},
+									{
+										"key": "City",
+										"value": "santiago",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{TemperatureApiEndpoint}}/temperature",
+									"host": [
+										"{{TemperatureApiEndpoint}}"
+									],
+									"path": [
+										"temperature"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Tests for Temperature API."
+		},
+		{
+			"name": "Json Placeholder",
+			"item": [
+				{
+					"name": "Posts",
+					"item": [
+						{
+							"name": "Positive",
+							"item": [
+								{
+									"name": "Get All Posts",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get First Post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/1",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 100th post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/100",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"100"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Negative",
+							"item": [
+								{
+									"name": "Get . Post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/.",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"."
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 0th Post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/0",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"0"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 101st Post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/101",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"101"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Positive",
+							"item": [
+								{
+									"name": "Get All Users",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/users",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"users"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get First User",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/1",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 10th post",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/posts/10",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"posts",
+												"10"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Negative",
+							"item": [
+								{
+									"name": "Get . User",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/users/.",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"users",
+												"."
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 0th User",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/users/0",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"users",
+												"0"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 11th User",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/users/11",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"users",
+												"11"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Comments",
+					"item": [
+						{
+							"name": "Positive",
+							"item": [
+								{
+									"name": "Get All Comments",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get First Comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments/1",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 500th Comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments/10",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments",
+												"10"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Negative",
+							"item": [
+								{
+									"name": "Get .  Comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments/.",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments",
+												"."
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 0th Comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments/0",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments",
+												"0"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get 501st Comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {",
+													"    pm.response.to.have.status(404);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{TestAPIEndpoint}}/comments/501",
+											"host": [
+												"{{TestAPIEndpoint}}"
+											],
+											"path": [
+												"comments",
+												"501"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
